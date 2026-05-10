@@ -392,15 +392,6 @@ Feel free to reach out for collaboration, questions, or professional opportuniti
 
 <br>
 
----
-
-## 📊 GitHub Stats
-
-<div align="center">
-
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=youseffahem&show_icons=true&theme=tokyonight&hide_border=true)
-
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=youseffahem&layout=compact&theme=tokyonight&hide_border=true)
 
 </div>
 
