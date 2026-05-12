@@ -326,27 +326,27 @@ An automated plant health monitoring system that reads **soil moisture levels** 
 <div align="center">
 
 **💡 Controlled LED**
-![Controlled LED Demo](Arduino-Projects-Collection/Controlled-LED/circuit.png)
+![Controlled LED Demo](Arduino-Projects-Collection/Controlled-LED/demo.gif)
 
 ---
 
 **🪩 Disco Strobe Light**
-![Disco Strobe Demo](Arduino-Projects-Collection/Disco-Strobe-Light/circuit.png)
+![Disco Strobe Demo](Arduino-Projects-Collection/Disco-Strobe-Light/demo.gif)
 
 ---
 
 **🔆 Light Dimmer**
-![Light Dimmer Demo](Arduino-Projects-Collection/Light-Dimmer/circuit.png)
+![Light Dimmer Demo](Arduino-Projects-Collection/Light-Dimmer/demo.gif)
 
 ---
 
 **🧠 Memory Game**
-![Memory Game Demo](Arduino-Projects-Collection/Memory-Game/circuit.png)
+![Memory Game Demo](Arduino-Projects-Collection/Memory-Game/demo.gif)
 
 ---
 
 **🌱 Plant Monitor**
-![Plant Monitor Demo](Arduino-Projects-Collection/Plant-Monitor/circuit.png)
+![Plant Monitor Demo](Arduino-Projects-Collection/Plant-Monitor/demo.gif)
 
 </div>
 
