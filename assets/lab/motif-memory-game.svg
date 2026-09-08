@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 230" width="640" height="230" role="img" aria-label="Memory Game: an LED sequence plays, then player input is echoed back and the sequence grows">
+<title>Memory Game - Simon sequence</title>
+<defs>
+  <linearGradient id="mgbg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#101B27"/><stop offset="1" stop-color="#0A101A"/></linearGradient>
+  <radialGradient id="mg1"><stop offset="0" stop-color="#35D07F" stop-opacity=".9"/><stop offset="1" stop-color="#35D07F" stop-opacity="0"/></radialGradient>
+  <radialGradient id="mg2"><stop offset="0" stop-color="#E8A33D" stop-opacity=".9"/><stop offset="1" stop-color="#E8A33D" stop-opacity="0"/></radialGradient>
+  <radialGradient id="mg3"><stop offset="0" stop-color="#4C8DF6" stop-opacity=".9"/><stop offset="1" stop-color="#4C8DF6" stop-opacity="0"/></radialGradient>
+  <radialGradient id="mg4"><stop offset="0" stop-color="#E5484D" stop-opacity=".9"/><stop offset="1" stop-color="#E5484D" stop-opacity="0"/></radialGradient>
+</defs>
+<style>
+  .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+  .lbl{fill:#8FA3B0}.dim{fill:#5E6E7A}
+  .led,.halo{animation-duration:12s;animation-timing-function:ease-in-out;animation-iteration-count:infinite}
+  .l1{animation-name:k1}.l2{animation-name:k2}.l3{animation-name:k3}.l4{animation-name:k4}
+  @keyframes k1{0%,6%{opacity:.14}9%{opacity:1}13%{opacity:.14}45%{opacity:.14}48%{opacity:1}52%{opacity:.14}100%{opacity:.14}}
+  @keyframes k2{0%,13%{opacity:.14}16%{opacity:1}20%{opacity:.14}52%{opacity:.14}55%{opacity:1}59%{opacity:.14}100%{opacity:.14}}
+  @keyframes k3{0%,20%{opacity:.14}23%{opacity:1}27%{opacity:.14}59%{opacity:.14}62%{opacity:1}66%{opacity:.14}100%{opacity:.14}}
+  @keyframes k4{0%,74%{opacity:.14}78%{opacity:1}83%{opacity:.14}100%{opacity:.14}}
+  .btn{animation-duration:12s;animation-timing-function:ease-out;animation-iteration-count:infinite;fill:#18242F;stroke:#3A4C5C;stroke-width:1.6}
+  .b1{animation-name:p1}.b2{animation-name:p2}.b3{animation-name:p3}
+  @keyframes p1{0%,45%{transform:translateY(0);stroke:#3A4C5C}48%{transform:translateY(3px);stroke:#35D07F}53%,100%{transform:translateY(0);stroke:#3A4C5C}}
+  @keyframes p2{0%,52%{transform:translateY(0);stroke:#3A4C5C}55%{transform:translateY(3px);stroke:#E8A33D}60%,100%{transform:translateY(0);stroke:#3A4C5C}}
+  @keyframes p3{0%,59%{transform:translateY(0);stroke:#3A4C5C}62%{transform:translateY(3px);stroke:#4C8DF6}67%,100%{transform:translateY(0);stroke:#3A4C5C}}
+  .s1{animation-name:sq1}.s2{animation-name:sq2}.s3{animation-name:sq3}.s4{animation-name:sq4}
+  .s1,.s2,.s3,.s4{animation-duration:12s;animation-timing-function:ease-in-out;animation-iteration-count:infinite}
+  @keyframes sq1{0%,6%{opacity:.15}9%,100%{opacity:1}}
+  @keyframes sq2{0%,13%{opacity:.15}16%,100%{opacity:1}}
+  @keyframes sq3{0%,20%{opacity:.15}23%,100%{opacity:1}}
+  @keyframes sq4{0%,74%{opacity:.15}78%,100%{opacity:1}}
+  .t{animation-duration:12s;animation-timing-function:steps(1,end);animation-iteration-count:infinite;opacity:0}
+  .t1{animation-name:tA}.t2{animation-name:tB}.t3{animation-name:tC}
+  @keyframes tA{0%,2%{opacity:0}3%,32%{opacity:1}33%,100%{opacity:0}}
+  @keyframes tB{0%,35%{opacity:0}36%,69%{opacity:1}70%,100%{opacity:0}}
+  @keyframes tC{0%,72%{opacity:0}73%,93%{opacity:1}94%,100%{opacity:0}}
+  .caret{animation:cr 1s steps(1,end) infinite}
+  @keyframes cr{0%,49%{opacity:1}50%,100%{opacity:0}}
+  .scan{animation:sc 12s linear infinite}
+  @keyframes sc{from{transform:translateX(-40px)}to{transform:translateX(660px)}}
+  @media (prefers-reduced-motion:reduce){*{animation:none!important}
+    /* all three status lines start hidden; keep one legible without animation */
+    .t1{opacity:1!important}}
+</style>
+<rect width="640" height="230" rx="10" fill="url(#mgbg)"/>
+<rect x="1" y="1" width="638" height="228" rx="10" fill="none" stroke="#16354A" stroke-width="1.6"/>
+<g class="scan" opacity=".07"><rect x="0" y="0" width="26" height="230" fill="#4DD0D6"/></g>
+
+<text class="mono" x="22" y="28" font-size="11" fill="#4DD0D6" letter-spacing="2.2">EXP-04 &#183; MEMORY GAME</text>
+<text class="mono dim" x="618" y="28" font-size="10" text-anchor="end" letter-spacing="2">SIMON SEQUENCE</text>
+<path d="M22 40H618" stroke="#16354A" stroke-width="1"/>
+
+<g>
+  <circle class="halo l1" cx="130" cy="86" r="34" fill="url(#mg1)"/>
+  <circle cx="130" cy="86" r="21" fill="#12202B" stroke="#35D07F" stroke-width="1.8" opacity=".45"/>
+  <circle class="led l1" cx="130" cy="86" r="18" fill="#35D07F"/>
+  <text class="mono dim" x="130" y="124" font-size="9" text-anchor="middle">D8 &#183; G3</text>
+</g>
+<g>
+  <circle class="halo l2" cx="250" cy="86" r="34" fill="url(#mg2)"/>
+  <circle cx="250" cy="86" r="21" fill="#12202B" stroke="#E8A33D" stroke-width="1.8" opacity=".45"/>
+  <circle class="led l2" cx="250" cy="86" r="18" fill="#E8A33D"/>
+  <text class="mono dim" x="250" y="124" font-size="9" text-anchor="middle">D9 &#183; A3</text>
+</g>
+<g>
+  <circle class="halo l3" cx="370" cy="86" r="34" fill="url(#mg3)"/>
+  <circle cx="370" cy="86" r="21" fill="#12202B" stroke="#4C8DF6" stroke-width="1.8" opacity=".45"/>
+  <circle class="led l3" cx="370" cy="86" r="18" fill="#4C8DF6"/>
+  <text class="mono dim" x="370" y="124" font-size="9" text-anchor="middle">D10 &#183; B3</text>
+</g>
+<g>
+  <circle class="halo l4" cx="490" cy="86" r="34" fill="url(#mg4)"/>
+  <circle cx="490" cy="86" r="21" fill="#12202B" stroke="#E5484D" stroke-width="1.8" opacity=".45"/>
+  <circle class="led l4" cx="490" cy="86" r="18" fill="#E5484D"/>
+  <text class="mono dim" x="490" y="124" font-size="9" text-anchor="middle">D11 &#183; C4</text>
+</g>
+
+<rect class="btn b1" x="118" y="136" width="24" height="24" rx="5"/>
+<rect class="btn b2" x="238" y="136" width="24" height="24" rx="5"/>
+<rect class="btn b3" x="358" y="136" width="24" height="24" rx="5"/>
+<rect class="btn"    x="478" y="136" width="24" height="24" rx="5"/>
+<text class="mono dim" x="560" y="152" font-size="9" letter-spacing="1.4">D2&#8211;D5</text>
+
+<path d="M22 176H618" stroke="#16354A" stroke-width="1"/>
+<text class="mono lbl" x="22" y="202" font-size="10" letter-spacing="1.8">SEQ</text>
+<circle class="s1" cx="66"  cy="198" r="5" fill="#35D07F"/>
+<circle class="s2" cx="88"  cy="198" r="5" fill="#E8A33D"/>
+<circle class="s3" cx="110" cy="198" r="5" fill="#4C8DF6"/>
+<circle class="s4" cx="132" cy="198" r="5" fill="#E5484D"/>
+
+<text class="mono t t1" x="200" y="202" font-size="10" fill="#4DD0D6" letter-spacing="1.6">PLAYING SEQUENCE</text>
+<text class="mono t t2" x="200" y="202" font-size="10" fill="#E8A33D" letter-spacing="1.6">PLAYER INPUT &#183; WAITING</text>
+<text class="mono t t3" x="200" y="202" font-size="10" fill="#35D07F" letter-spacing="1.6">MATCH OK &#183; SEQUENCE +1</text>
+<rect class="caret" x="404" y="191" width="7" height="11" fill="#4DD0D6" opacity=".8"/>
+
+<text class="mono dim" x="618" y="202" font-size="9" text-anchor="end" letter-spacing="1.4">VISUAL CONCEPT ONLY</text>
+</svg>

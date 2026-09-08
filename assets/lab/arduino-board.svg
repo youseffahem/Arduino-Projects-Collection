@@ -1,0 +1,251 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 440" width="920" height="440" role="img" aria-label="Animated Arduino Uno board, powered on and running">
+<title>Arduino Uno - powered on</title>
+<defs>
+  <linearGradient id="panel" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#101B27"/><stop offset="1" stop-color="#0A101A"/>
+  </linearGradient>
+  <linearGradient id="pcb" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#00A9B1"/><stop offset=".55" stop-color="#00979D"/><stop offset="1" stop-color="#00767B"/>
+  </linearGradient>
+  <pattern id="grid" width="22" height="22" patternUnits="userSpaceOnUse">
+    <path d="M22 0H0V22" fill="none" stroke="#17293C" stroke-width="1"/>
+  </pattern>
+  <radialGradient id="gGreen"><stop offset="0" stop-color="#35D07F" stop-opacity=".85"/><stop offset="1" stop-color="#35D07F" stop-opacity="0"/></radialGradient>
+  <radialGradient id="gAmber"><stop offset="0" stop-color="#E8A33D" stop-opacity=".85"/><stop offset="1" stop-color="#E8A33D" stop-opacity="0"/></radialGradient>
+  <radialGradient id="gYellow"><stop offset="0" stop-color="#FFC65C" stop-opacity=".85"/><stop offset="1" stop-color="#FFC65C" stop-opacity="0"/></radialGradient>
+  <radialGradient id="gBlue"><stop offset="0" stop-color="#4C8DF6" stop-opacity=".8"/><stop offset="1" stop-color="#4C8DF6" stop-opacity="0"/></radialGradient>
+  <radialGradient id="gTeal"><stop offset="0" stop-color="#4DD0D6" stop-opacity=".55"/><stop offset="1" stop-color="#4DD0D6" stop-opacity="0"/></radialGradient>
+  <radialGradient id="gWhite"><stop offset="0" stop-color="#E6F2F5" stop-opacity=".7"/><stop offset="1" stop-color="#E6F2F5" stop-opacity="0"/></radialGradient>
+</defs>
+<style>
+  .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+  .silk{fill:#EAF7F8;opacity:.72}
+  .lbl{fill:#8FA3B0}
+  .trace{fill:none;stroke:#C9A227;stroke-width:2.4;opacity:.45;stroke-linecap:round;stroke-linejoin:round}
+  .glow{fill:none;stroke:#5FE3EA;stroke-width:3.2;stroke-linecap:round;stroke-linejoin:round;
+        stroke-dasharray:13 87;animation:flow 2.6s linear infinite}
+  @keyframes flow{from{stroke-dashoffset:100}to{stroke-dashoffset:0}}
+  .breathe{animation:br 2.6s ease-in-out infinite alternate}
+  @keyframes br{from{opacity:.62}to{opacity:1}}
+  .blinkL{animation:bl 2s ease-in-out infinite}
+  @keyframes bl{0%,46%{opacity:1}54%,100%{opacity:.08}}
+  .tx{animation:ftx 1.7s linear infinite}
+  @keyframes ftx{0%{opacity:.08}5%{opacity:1}9%{opacity:.18}13%{opacity:.92}19%{opacity:.12}25%{opacity:.8}30%{opacity:.08}100%{opacity:.08}}
+  .rx{animation:frx 2.3s linear infinite}
+  @keyframes frx{0%,38%{opacity:.08}43%{opacity:1}47%{opacity:.18}53%{opacity:.88}59%{opacity:.12}65%{opacity:.72}70%{opacity:.08}100%{opacity:.08}}
+  .pad{animation:padOn 2.6s ease-in-out infinite;opacity:.2}
+  @keyframes padOn{0%,100%{opacity:.2}10%{opacity:1}26%{opacity:.2}}
+  .halo{animation:halo 5s ease-in-out infinite}
+  @keyframes halo{0%,100%{opacity:.14}50%{opacity:.42}}
+  .core{animation:core 3.2s ease-in-out infinite}
+  @keyframes core{0%,100%{opacity:.1}50%{opacity:.34}}
+  .dot{animation:dotp 2.2s ease-in-out infinite}
+  @keyframes dotp{0%,100%{opacity:.25}50%{opacity:1}}
+  .p1{animation:d1 17s linear infinite}
+  @keyframes d1{from{transform:translate(0,0);opacity:0}10%{opacity:.7}90%{opacity:.7}to{transform:translate(70px,-42px);opacity:0}}
+  .p2{animation:d2 21s linear infinite}
+  @keyframes d2{from{transform:translate(0,0);opacity:0}10%{opacity:.6}90%{opacity:.6}to{transform:translate(-58px,36px);opacity:0}}
+  .p3{animation:d3 25s linear infinite}
+  @keyframes d3{from{transform:translate(0,0);opacity:0}10%{opacity:.5}90%{opacity:.5}to{transform:translate(46px,52px);opacity:0}}
+  @media (prefers-reduced-motion:reduce){*{animation:none!important}}
+</style>
+
+<rect width="920" height="440" fill="url(#panel)"/>
+<rect width="920" height="440" fill="url(#grid)" opacity=".55"/>
+
+<g stroke="#00979D" stroke-width="2" fill="none" opacity=".55">
+  <path d="M16 44V16h28"/><path d="M876 16h28v28"/><path d="M904 396v28h-28"/><path d="M44 424H16v-28"/>
+</g>
+
+<text class="mono silk" x="30" y="34" font-size="12" letter-spacing="2.4">ARDUINO UNO &#183; ATmega328P</text>
+<circle class="dot" cx="802" cy="30" r="4.5" fill="#35D07F"/>
+<text class="mono" x="890" y="34" font-size="12" fill="#35D07F" text-anchor="end" letter-spacing="2.4">RUNNING</text>
+
+<g class="p1"><circle cx="180" cy="330" r="1.8" fill="#5FE3EA"/></g>
+<g class="p2"><circle cx="700" cy="80" r="1.6" fill="#5FE3EA"/></g>
+<g class="p3"><circle cx="120" cy="120" r="1.5" fill="#4DD0D6"/></g>
+<g class="p1" style="animation-delay:-8s"><circle cx="640" cy="380" r="1.5" fill="#4DD0D6"/></g>
+<g class="p2" style="animation-delay:-11s"><circle cx="240" cy="60" r="1.4" fill="#5FE3EA"/></g>
+<g class="p3" style="animation-delay:-14s"><circle cx="820" cy="300" r="1.6" fill="#4DD0D6"/></g>
+
+<text class="mono lbl" x="110" y="152" font-size="10" text-anchor="middle" letter-spacing="2">POWER IN</text>
+<circle cx="110" cy="207" r="34" fill="url(#gAmber)" class="halo"/>
+<circle cx="110" cy="207" r="25" fill="#141F2C" stroke="#E8A33D" stroke-width="2"/>
+<path d="M114 194l-11 15h7l-4 12 12-16h-7z" fill="#E8A33D" class="breathe"/>
+<text class="mono lbl" x="110" y="256" font-size="10" text-anchor="middle">USB / 5V</text>
+
+<path class="trace" d="M135 207H198"/>
+<path class="trace" d="M198 207V152H240"/>
+<path class="trace" d="M198 207V307H242"/>
+<path class="glow" pathLength="100" d="M135 207H198V152H240" stroke="#E8A33D"/>
+<path class="glow" pathLength="100" style="animation-delay:-1.3s" d="M135 207H198V307H242" stroke="#E8A33D"/>
+<circle cx="198" cy="207" r="4.5" fill="#0A101A" stroke="#C9A227" stroke-width="1.6"/>
+
+<rect x="236" y="112" width="42" height="48" rx="3" fill="#AEBCC6" stroke="#79878F" stroke-width="1.5"/>
+<rect x="242" y="122" width="22" height="28" rx="2" fill="#1A2128"/>
+<rect x="238" y="286" width="42" height="42" rx="5" fill="#171B1F" stroke="#2C343B" stroke-width="1.5"/>
+<circle cx="248" cy="307" r="8.5" fill="#0A0D10"/>
+
+<rect x="270" y="88" width="340" height="264" rx="9" fill="url(#pcb)"/>
+<rect x="270" y="88" width="340" height="264" rx="9" fill="none" stroke="#00686D" stroke-width="1.5"/>
+<rect x="279" y="97" width="322" height="246" rx="4" fill="none" stroke="#EAF7F8" stroke-width="1" opacity=".22"/>
+<circle cx="288" cy="106" r="4" fill="#0A101A" opacity=".55"/>
+<circle cx="592" cy="106" r="4" fill="#0A101A" opacity=".55"/>
+<circle cx="288" cy="334" r="4" fill="#0A101A" opacity=".55"/>
+<circle cx="592" cy="334" r="4" fill="#0A101A" opacity=".55"/>
+
+<g opacity=".3" stroke="#0A3F42" stroke-width="1.4" fill="none">
+  <path d="M400 228V196H352"/><path d="M470 228V180H438"/><path d="M540 228V206H578V174"/>
+  <path d="M400 296V318"/><path d="M470 296V320H508"/>
+</g>
+<path class="glow" pathLength="100" style="animation-delay:-.4s;stroke-width:2.4;stroke:#9CF3F8" d="M400 228V196H352"/>
+<path class="glow" pathLength="100" style="animation-delay:-1.1s;stroke-width:2.4;stroke:#9CF3F8" d="M470 228V180H438"/>
+<path class="glow" pathLength="100" style="animation-delay:-1.8s;stroke-width:2.4;stroke:#9CF3F8" d="M540 228V206H578V174"/>
+
+<circle cx="465" cy="262" r="70" fill="url(#gTeal)" class="core"/>
+
+<rect x="320" y="92" width="250" height="18" rx="2" fill="#12181C"/>
+<g fill="#FFD98A">
+  <rect class="pad" x="326" y="96" width="9" height="10" rx="1.5"/>
+  <rect class="pad" x="343" y="96" width="9" height="10" rx="1.5" style="animation-delay:.11s"/>
+  <rect class="pad" x="360" y="96" width="9" height="10" rx="1.5" style="animation-delay:.22s"/>
+  <rect class="pad" x="377" y="96" width="9" height="10" rx="1.5" style="animation-delay:.33s"/>
+  <rect class="pad" x="394" y="96" width="9" height="10" rx="1.5" style="animation-delay:.44s"/>
+  <rect class="pad" x="411" y="96" width="9" height="10" rx="1.5" style="animation-delay:.55s"/>
+  <rect class="pad" x="428" y="96" width="9" height="10" rx="1.5" style="animation-delay:.66s"/>
+  <rect class="pad" x="445" y="96" width="9" height="10" rx="1.5" style="animation-delay:.77s"/>
+  <rect class="pad" x="462" y="96" width="9" height="10" rx="1.5" style="animation-delay:.88s"/>
+  <rect class="pad" x="479" y="96" width="9" height="10" rx="1.5" style="animation-delay:.99s"/>
+  <rect class="pad" x="496" y="96" width="9" height="10" rx="1.5" style="animation-delay:1.1s"/>
+  <rect class="pad" x="513" y="96" width="9" height="10" rx="1.5" style="animation-delay:1.21s"/>
+  <rect class="pad" x="530" y="96" width="9" height="10" rx="1.5" style="animation-delay:1.32s"/>
+  <rect class="pad" x="547" y="96" width="9" height="10" rx="1.5" style="animation-delay:1.43s"/>
+</g>
+<text class="mono silk" x="445" y="126" font-size="9" text-anchor="middle" letter-spacing="1.6">DIGITAL  D0 &#8212; D13  (PWM ~)</text>
+
+<rect x="300" y="330" width="120" height="18" rx="2" fill="#12181C"/>
+<g fill="#FFD98A" opacity=".5">
+  <rect x="306" y="334" width="9" height="10" rx="1.5"/><rect x="320" y="334" width="9" height="10" rx="1.5"/>
+  <rect x="334" y="334" width="9" height="10" rx="1.5"/><rect x="348" y="334" width="9" height="10" rx="1.5"/>
+  <rect x="362" y="334" width="9" height="10" rx="1.5"/><rect x="376" y="334" width="9" height="10" rx="1.5"/>
+  <rect x="390" y="334" width="9" height="10" rx="1.5"/><rect x="404" y="334" width="9" height="10" rx="1.5"/>
+</g>
+<text class="mono silk" x="360" y="326" font-size="8" text-anchor="middle" letter-spacing="1.4">POWER</text>
+
+<rect x="440" y="330" width="120" height="18" rx="2" fill="#12181C"/>
+<g fill="#FFD98A">
+  <rect class="pad" x="446" y="334" width="9" height="10" rx="1.5" style="animation-delay:.2s"/>
+  <rect class="pad" x="464" y="334" width="9" height="10" rx="1.5" style="animation-delay:.5s"/>
+  <rect class="pad" x="482" y="334" width="9" height="10" rx="1.5" style="animation-delay:.8s"/>
+  <rect class="pad" x="500" y="334" width="9" height="10" rx="1.5" style="animation-delay:1.1s"/>
+  <rect class="pad" x="518" y="334" width="9" height="10" rx="1.5" style="animation-delay:1.4s"/>
+  <rect class="pad" x="536" y="334" width="9" height="10" rx="1.5" style="animation-delay:1.7s"/>
+</g>
+<text class="mono silk" x="500" y="326" font-size="8" text-anchor="middle" letter-spacing="1.4">ANALOG IN  A0 &#8212; A5</text>
+
+<rect x="390" y="228" width="150" height="68" rx="3" fill="#1B2226" stroke="#0D1215" stroke-width="1.5"/>
+<path d="M390 252a10 10 0 0 0 0 20z" fill="#0D1215"/>
+<g fill="#8C9AA3">
+  <rect x="396" y="221" width="5" height="7" rx="1"/><rect x="406" y="221" width="5" height="7" rx="1"/>
+  <rect x="416" y="221" width="5" height="7" rx="1"/><rect x="426" y="221" width="5" height="7" rx="1"/>
+  <rect x="436" y="221" width="5" height="7" rx="1"/><rect x="446" y="221" width="5" height="7" rx="1"/>
+  <rect x="456" y="221" width="5" height="7" rx="1"/><rect x="466" y="221" width="5" height="7" rx="1"/>
+  <rect x="476" y="221" width="5" height="7" rx="1"/><rect x="486" y="221" width="5" height="7" rx="1"/>
+  <rect x="496" y="221" width="5" height="7" rx="1"/><rect x="506" y="221" width="5" height="7" rx="1"/>
+  <rect x="516" y="221" width="5" height="7" rx="1"/><rect x="526" y="221" width="5" height="7" rx="1"/>
+  <rect x="396" y="296" width="5" height="7" rx="1"/><rect x="406" y="296" width="5" height="7" rx="1"/>
+  <rect x="416" y="296" width="5" height="7" rx="1"/><rect x="426" y="296" width="5" height="7" rx="1"/>
+  <rect x="436" y="296" width="5" height="7" rx="1"/><rect x="446" y="296" width="5" height="7" rx="1"/>
+  <rect x="456" y="296" width="5" height="7" rx="1"/><rect x="466" y="296" width="5" height="7" rx="1"/>
+  <rect x="476" y="296" width="5" height="7" rx="1"/><rect x="486" y="296" width="5" height="7" rx="1"/>
+  <rect x="496" y="296" width="5" height="7" rx="1"/><rect x="506" y="296" width="5" height="7" rx="1"/>
+  <rect x="516" y="296" width="5" height="7" rx="1"/><rect x="526" y="296" width="5" height="7" rx="1"/>
+</g>
+<text class="mono" x="470" y="258" font-size="11" fill="#B9C7D0" text-anchor="middle" letter-spacing="1.2">ATmega328P</text>
+<text class="mono" x="470" y="274" font-size="8" fill="#6E7F8B" text-anchor="middle" letter-spacing="1.6">8-BIT AVR</text>
+<circle cx="404" cy="286" r="3" fill="#0D1215"/>
+
+<rect x="348" y="248" width="34" height="18" rx="9" fill="#C2CED6" stroke="#8593A0" stroke-width="1"/>
+<text class="mono silk" x="365" y="280" font-size="7" text-anchor="middle">16MHz</text>
+
+<rect x="300" y="282" width="26" height="32" rx="2" fill="#1B2226" stroke="#0D1215" stroke-width="1"/>
+<rect x="303" y="278" width="20" height="6" rx="1" fill="#8C9AA3"/>
+
+<rect x="286" y="100" width="20" height="20" rx="3" fill="#2A3138" stroke="#4A545C" stroke-width="1"/>
+<circle cx="296" cy="110" r="6" fill="#C9D6DF" opacity=".75"/>
+<text class="mono silk" x="296" y="134" font-size="7" text-anchor="middle">RESET</text>
+
+<g>
+  <circle cx="307" cy="172" r="17" fill="url(#gGreen)" class="breathe"/>
+  <rect x="300" y="168" width="14" height="9" rx="1.5" fill="#35D07F" class="breathe"/>
+  <text class="mono silk" x="322" y="176" font-size="9">ON</text>
+
+  <circle cx="307" cy="196" r="17" fill="url(#gAmber)" class="blinkL"/>
+  <rect x="300" y="192" width="14" height="9" rx="1.5" fill="#E8A33D" class="blinkL"/>
+  <text class="mono silk" x="322" y="200" font-size="9">L</text>
+
+  <circle cx="307" cy="220" r="15" fill="url(#gYellow)" class="tx"/>
+  <rect x="300" y="216" width="14" height="9" rx="1.5" fill="#FFC65C" class="tx"/>
+  <text class="mono silk" x="322" y="224" font-size="9">TX</text>
+
+  <circle cx="307" cy="244" r="15" fill="url(#gYellow)" class="rx"/>
+  <rect x="300" y="240" width="14" height="9" rx="1.5" fill="#FFC65C" class="rx"/>
+  <text class="mono silk" x="322" y="248" font-size="9">RX</text>
+</g>
+
+<rect x="572" y="196" width="14" height="30" rx="2" fill="#12181C"/>
+<g fill="#FFD98A" opacity=".45">
+  <rect x="575" y="200" width="4" height="5"/><rect x="581" y="200" width="4" height="5"/>
+  <rect x="575" y="209" width="4" height="5"/><rect x="581" y="209" width="4" height="5"/>
+  <rect x="575" y="218" width="4" height="5"/><rect x="581" y="218" width="4" height="5"/>
+</g>
+<text class="mono silk" x="579" y="240" font-size="6" text-anchor="middle">ICSP</text>
+
+<text class="mono lbl" x="790" y="72" font-size="10" text-anchor="middle" letter-spacing="2">I / O  BUS</text>
+
+<path class="trace" d="M610 150H710L740 120H770"/>
+<path class="trace" d="M610 175H745L760 190H770"/>
+<path class="trace" d="M770 260H750L690 200H610"/>
+<path class="trace" d="M770 330H765L660 225H610"/>
+<path class="glow" pathLength="100" d="M610 150H710L740 120H770" stroke="#FFD166"/>
+<path class="glow" pathLength="100" style="animation-delay:-.65s" d="M610 175H745L760 190H770" stroke="#4C8DF6"/>
+<path class="glow" pathLength="100" style="animation-delay:-1.3s" d="M770 260H750L690 200H610" stroke="#35D07F"/>
+<path class="glow" pathLength="100" style="animation-delay:-1.95s" d="M770 330H765L660 225H610" stroke="#C9D6DF"/>
+<g fill="#0A101A" stroke="#C9A227" stroke-width="1.5">
+  <circle cx="710" cy="150" r="4"/><circle cx="745" cy="175" r="4"/><circle cx="690" cy="200" r="4"/><circle cx="660" cy="225" r="4"/>
+</g>
+
+<g>
+  <circle cx="790" cy="120" r="28" fill="url(#gYellow)" class="halo"/>
+  <circle cx="790" cy="120" r="20" fill="#141F2C" stroke="#FFD166" stroke-width="2"/>
+  <path d="M790 110l8 12h-16z" fill="#FFD166" class="dot"/><rect x="786" y="124" width="8" height="4" fill="#FFD166" opacity=".7"/>
+  <text class="mono lbl" x="818" y="118" font-size="10" letter-spacing="1.2">LED</text>
+  <text class="mono" x="818" y="130" font-size="8" fill="#5E6E7A" letter-spacing="1">OUTPUT</text>
+</g>
+<g>
+  <circle cx="790" cy="190" r="28" fill="url(#gBlue)" class="halo" style="animation-delay:-1.2s"/>
+  <circle cx="790" cy="190" r="20" fill="#141F2C" stroke="#4C8DF6" stroke-width="2"/>
+  <circle cx="790" cy="190" r="7" fill="none" stroke="#4C8DF6" stroke-width="2"/>
+  <path d="M799 183a10 10 0 0 1 0 14M804 179a16 16 0 0 1 0 22" fill="none" stroke="#4C8DF6" stroke-width="1.6" class="dot"/>
+  <text class="mono lbl" x="818" y="188" font-size="10" letter-spacing="1.2">BUZZER</text>
+  <text class="mono" x="818" y="200" font-size="8" fill="#5E6E7A" letter-spacing="1">OUTPUT</text>
+</g>
+<g>
+  <circle cx="790" cy="260" r="28" fill="url(#gGreen)" class="halo" style="animation-delay:-2.4s"/>
+  <circle cx="790" cy="260" r="20" fill="#141F2C" stroke="#35D07F" stroke-width="2"/>
+  <path d="M783 252v14M787 250v18M791 252v14M795 254v10" stroke="#35D07F" stroke-width="1.8" fill="none" class="dot"/>
+  <text class="mono lbl" x="818" y="258" font-size="10" letter-spacing="1.2">SENSOR</text>
+  <text class="mono" x="818" y="270" font-size="8" fill="#5E6E7A" letter-spacing="1">INPUT</text>
+</g>
+<g>
+  <circle cx="790" cy="330" r="28" fill="url(#gWhite)" class="halo" style="animation-delay:-3.6s"/>
+  <circle cx="790" cy="330" r="20" fill="#141F2C" stroke="#C9D6DF" stroke-width="2"/>
+  <rect x="781" y="324" width="18" height="10" rx="3" fill="none" stroke="#C9D6DF" stroke-width="1.8"/>
+  <rect x="786" y="320" width="8" height="5" rx="2" fill="#C9D6DF" class="dot"/>
+  <text class="mono lbl" x="818" y="328" font-size="10" letter-spacing="1.2">BUTTON</text>
+  <text class="mono" x="818" y="340" font-size="8" fill="#5E6E7A" letter-spacing="1">INPUT</text>
+</g>
+
+<path d="M30 398H890" stroke="#1D3145" stroke-width="1"/>
+<text class="mono" x="460" y="420" font-size="9.5" fill="#6E7F8B" text-anchor="middle" letter-spacing="1.5">FLASH 32 KB &#183; SRAM 2 KB &#183; EEPROM 1 KB &#183; CLOCK 16 MHz &#183; DIGITAL I/O 14 &#183; PWM 6 &#183; ANALOG IN 6</text>
+</svg>
